@@ -7,6 +7,5 @@ import android.webkit.WebView;
  * implementation will have to be given as a constructor argument to {@link RNCWebViewManager}.
  */
 public interface WebViewConfig {
-
-  void configWebView(WebView webView);
+    void configWebView(WebView webView);
 }

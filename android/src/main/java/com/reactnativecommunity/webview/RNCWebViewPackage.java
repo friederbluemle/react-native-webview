@@ -11,15 +11,15 @@ import java.util.Collections;
 import java.util.List;
 
 public class RNCWebViewPackage implements ReactPackage {
-  @NonNull
-  @Override
-  public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
-    return Collections.<NativeModule>singletonList(new RNCWebViewModule(reactContext));
-  }
+    @NonNull
+    @Override
+    public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
+        return Collections.<NativeModule>singletonList(new RNCWebViewModule(reactContext));
+    }
 
-  @NonNull
-  @Override
-  public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
-    return Collections.<ViewManager>singletonList(new RNCWebViewManager());
-  }
+    @NonNull
+    @Override
+    public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
+        return Collections.<ViewManager>singletonList(new RNCWebViewManager());
+    }
 }
