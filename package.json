@@ -11,18 +11,18 @@
   "version": "10.2.3",
   "homepage": "https://github.com/react-native-community/react-native-webview#readme",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "react-native start",
     "start:android": "react-native run-android",
     "start:ios": "react-native run-ios",
-    "start:macos": "node node_modules/react-native-macos/local-cli/cli.js start --use-react-native-macos",
+    "start:macos": "react-native start --use-react-native-macos",
     "start:windows": "react-native start --use-react-native-windows",
     "ci": "CI=true && yarn lint",
-    "ci:publish": "yarn semantic-release",
-    "lint": "yarn tsc --noEmit && yarn eslint ./src --ext .ts,.tsx",
-    "build": "yarn tsc",
+    "ci:publish": "semantic-release",
+    "lint": "tsc --noEmit && eslint ./src --ext .ts,.tsx",
+    "build": "tsc",
     "prepare": "yarn build",
     "appium": "appium",
-    "test:windows": "yarn jest --setupFiles=./jest-setups/jest.setup.windows.js"
+    "test:windows": "jest --setupFiles=./jest-setups/jest.setup.windows.js"
   },
   "rn-docs": {
     "title": "Webview",
