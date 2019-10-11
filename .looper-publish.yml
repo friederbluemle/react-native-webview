@@ -1,0 +1,9 @@
+tools:
+  nodejs: 10.16.3
+  npm: 6.9.0
+
+flows:
+  default:
+    - npm install -g yarn
+    - yarn
+    - yarn publish
