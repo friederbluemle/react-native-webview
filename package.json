@@ -8,7 +8,7 @@
     "Thibault Malbranche <malbranche.thibault@gmail.com>"
   ],
   "license": "MIT",
-  "version": "6.11.1",
+  "version": "6.11.1-custom.1",
   "homepage": "https://gecgithub01.walmart.com/electrode-mobile-platform/react-native-webview#readme",
   "scripts": {
     "ci": "CI=true && yarn lint && yarn test",
